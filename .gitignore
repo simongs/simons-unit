@@ -28,3 +28,13 @@ hs_err_pid*
 
 .idea/
 !/simons-unit.iml
+
+/bin/
+/.settings/
+/target/
+/.classpath
+/.project
+/.idea
+*.iml
+.DS_Store
+/webapp/WEB-INF
