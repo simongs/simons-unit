@@ -4,12 +4,11 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class WasRun3 extends TestCase3 {
-	public boolean wasRun;
-	public boolean wasSetup;
+	public String log;
 
 	@Override
 	public void setUp() {
-		wasSetup = true;
+		log = "setup";
 	}
 
 	public WasRun3(String name) {
@@ -17,7 +16,15 @@ public class WasRun3 extends TestCase3 {
 	}
 
 	public void testMethod() {
-		wasRun = true;
+		log += " testMethod";
 	}
 
+	@Override
+	public void tearDown() {
+		log += " tearDown";
+	}
+
+	public void testBrokenMethod() {
+		throw new RuntimeException("test Broken Method");
+	}
 }
