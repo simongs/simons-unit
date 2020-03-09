@@ -1,4 +1,4 @@
-package main.java;
+package com.dasoulte.tdd.first;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -7,6 +7,7 @@ public class WasRun {
 
 	private final String name;
 	public boolean wasRun;
+	public boolean wasSetup;
 
 	public WasRun(String name) {
 		this.name = name;

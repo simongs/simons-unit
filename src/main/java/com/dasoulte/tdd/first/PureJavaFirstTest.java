@@ -1,4 +1,4 @@
-package main.java;
+package com.dasoulte.tdd.first;
 
 public class PureJavaFirstTest {
 
